@@ -26,6 +26,6 @@ print(is_male)
 isMatureEnough = True
 print(isMatureEnough)
 
-distance_to_the_sun = 250
+distance_to_the_sun = 300
 print("The distance to the sun is :",distance_to_the_sun, "million kms")
 
