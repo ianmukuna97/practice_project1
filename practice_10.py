@@ -9,3 +9,12 @@ print(results[0])
 
 for result in results:
     total = result['chem'] + result['maths'] + result['english'] + result['kisw'] + result['geo']
+    result['total'] = total
+
+print(results)
+
+results.sort(key=lambda x:x['total'], reverse=True)
+print(results[0]) # top student
+print(results[-1]) # last student
+
+
