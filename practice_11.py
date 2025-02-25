@@ -28,7 +28,7 @@ def sayHi(name, age=21):
 
 
 sayHi("Mary")
-sayHi("Kevo", 23)
+sayHi("Kevo", 23) # name and age are parameters (in brackets)
 sayHi(age=23, name="Kevin")
 
 # users = ["A","B", "C"]
