@@ -1,14 +1,17 @@
-entered_value = input("Enter your value: ")
-if not entered_value.isnumeric():
-    print("Enter a number")
-    exit(0)
+# data, name, phone number, gender, amount
+# account
+# deposit, withdrawal, check balance
+# oop -- like a bank account
 
-score = int(entered_value)
-if score >=80:
-    print("A")
-elif score >=71 and score <= 79:
-    print("B")
-elif score >=61 and score <= 69:
-    print("C")
-else:
-    print("C+")
+# Matatu -- number, driver, conductor, route
+
+class Account:
+    def __init__(self, full_name, acc_number, phone, balance): #constructor ---(set up info)
+        self.full_name = full_name
+        self.acc_number = acc_number
+        self.phone = phone
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Amount ${amount} has been successfully deposited to ${self.acc_number}")
