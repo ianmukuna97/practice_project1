@@ -19,6 +19,11 @@ class PermanentEmployee(Employee):
 
     def print_salary(self):
         print(f"Salary is ${self.salary}")
+
+      # override
+    def print_details(self):
+        super().show_details()
+        print(f"Salary is ${self.salary}")
         
 class TemporaryEmployee(Employee):
     def __init__(self, name, id_no, dob, gender, hourly_pay, end_date):
@@ -32,4 +37,11 @@ class TemporaryEmployee(Employee):
     def print_end_date(self):
         print(f"End date is: ${self.end_date}")
 
-p1 = PermanentEmployee("George James", "22334455", "7-05")
+p1 = PermanentEmployee("George James", "22334455", "7-05-1995","M", 10000)
+p1.show_details()
+p1.print_salary()
+print("--------------------------")
+t1 = TemporaryEmployee("Sasha Said", "55544477", "4-7-1997", "F", 2000, "4-5-2024")
+t1.show_details()
+t1.print_end_date()
+t1.print_hourly_pay()
